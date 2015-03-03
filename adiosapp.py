@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import webapp
 
-class holaApp(webapp.webApp):
+class adiosApp(webapp.webApp):
 
 	def process(self,parsedRequest):
 		"""Process the relevant elements of the request.
@@ -9,7 +9,7 @@ class holaApp(webapp.webApp):
 		Devuelve el codigo HTTP de la respuesta y una pag HTML.
 		"""
 
-		return("200OK", "<html><body><h1>Adios mundo</h1></body></html>")
+		return("200 OK", "<html><body><h1>Adios mundo</h1></body></html>")
 
 if __name__=="__main__":
 	testWeb=holaApp("localhost",1234)
